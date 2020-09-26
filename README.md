@@ -11,7 +11,7 @@ I invite you to test your fine motor skills and run this code.
 * Runpy
 
 ## Launch the game
-Download all .py files and the 'files' directory, and place them all in the same directory.
-Run the 'Main Menu.py' file.
-The game instructions are available at the game main menu when it opens.
+* Download all .py files and the 'files' directory, and place them all in the same directory.
+* Run the 'Main Menu.py' file.
+* The game instructions are available at the game main menu.
 
