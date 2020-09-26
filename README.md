@@ -4,6 +4,7 @@ This project was created for self-learning purpose, as I found an interest in th
 I invite you to test your fine motor skills and run this code.
 
 ## Requirements:
+* Web camera
 * Python 3.6
 * Pygame
 * Opencv
