@@ -2,6 +2,7 @@
 In this game, apples will pop on the screen, and the players goal is to catch as many apples as they can as if the apples were surrouding them.
 
 This project was created for self-learning purpose, as I was curious about the Opencv library and its uses (and to entertain some younger family members towards the New Hebrew Year).
+
 I invite you to test your fine motor skills and run this code.
 
 ## Requirements:
