@@ -4,11 +4,11 @@ This project was created for self-learning purpose, as I found an interest in th
 I invite you to test your fine motor skills and run this code.
 
 ## Requirements:
-Python 3.6
-Pygame
-Opencv
-Numpy
-Runpy
+* Python 3.6
+* Pygame
+* Opencv
+* Numpy
+* Runpy
 
 ## Launch the game
 Download all .py files and the 'files' directory, and place them all in the same directory.
