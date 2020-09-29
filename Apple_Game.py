@@ -10,7 +10,7 @@ class player:
         self.score=score
         self.name=name
 
-    
+
 """Image processing and filtering function, and display related functions:"""
 
 def top_bar(back):
@@ -58,7 +58,7 @@ def get_coordinates (half):
 
 def activate_camera (cap,points):
     ret,frame=cap.read()
-    if points<9: #At the first 10 points of every round, the display will be straight (like looking in the mirror
+    if points<10: #At the first 10 points of every round, the display will be straight (like looking in the mirror
     #Beyond the 10 first points, the display will be flipped (right is left and left is right)
         frame=cv2.flip(frame,1)
     return frame
@@ -95,9 +95,9 @@ def paste_message (img,color,background,coordinate,scale):
 
 def first_screen_message():
     if english: #Print english message to screen
-        cv2.putText(frames['screen'], "Your score is in the top 5 high scores!",(0,int(height/10)),cv2.FONT_HERSHEY_SIMPLEX,1.1,(0,0,240),2,cv2.LINE_AA) #Writing the score
-        cv2.putText(frames['screen'], "Please type your name:",(30,2*int(height/10)),cv2.FONT_HERSHEY_SIMPLEX,1.1,(0,0,240),2,cv2.LINE_AA) #Writing the score
-        cv2.putText(frames['screen'], "When finished, press Enter",(30,3*int(height/10)),cv2.FONT_HERSHEY_SIMPLEX,1.1,(0,0,240),2,cv2.LINE_AA) #Writing the score
+        cv2.putText(frames['screen'], "Your score got to the top 5 high scores!",(0,int(height/10)),cv2.FONT_HERSHEY_SIMPLEX,0.8,(0,0,240),2,cv2.LINE_AA) #Writing the score
+        cv2.putText(frames['screen'], "Please type your name:",(30,2*int(height/10)),cv2.FONT_HERSHEY_SIMPLEX,0.8,(0,0,240),2,cv2.LINE_AA) #Writing the score
+        cv2.putText(frames['screen'], "When finished, press Enter",(30,3*int(height/10)),cv2.FONT_HERSHEY_SIMPLEX,0.8,(0,0,240),2,cv2.LINE_AA) #Writing the score
     else: #Print hebrew message to screen
         frames['screen']=paste_message (cv2.imread("./Files/Enter name.jpg",0),cv2.imread("./Files/Enter name.jpg",1),frames['screen'],(0,0),(2,2.5))
 
