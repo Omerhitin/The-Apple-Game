@@ -96,7 +96,7 @@ def paste_message (img,color,background,coordinate,scale):
 def first_screen_message():
     if english: #Print english message to screen
         cv2.putText(frames['screen'], "Your score got to the top 5 high scores!",(0,int(height/10)),cv2.FONT_HERSHEY_SIMPLEX,0.8,(0,0,240),2,cv2.LINE_AA) #Writing the score
-        cv2.putText(frames['screen'], "Please type your name:",(30,2*int(height/10)),cv2.FONT_HERSHEY_SIMPLEX,0.8,(0,0,240),2,cv2.LINE_AA) #Writing the score
+        cv2.putText(frames['screen'], "Please type your name",(30,2*int(height/10)),cv2.FONT_HERSHEY_SIMPLEX,0.8,(0,0,240),2,cv2.LINE_AA) #Writing the score
         cv2.putText(frames['screen'], "When finished, press Enter",(30,3*int(height/10)),cv2.FONT_HERSHEY_SIMPLEX,0.8,(0,0,240),2,cv2.LINE_AA) #Writing the score
     else: #Print hebrew message to screen
         frames['screen']=paste_message (cv2.imread("./Files/Enter name.jpg",0),cv2.imread("./Files/Enter name.jpg",1),frames['screen'],(0,0),(2,2.5))
